@@ -24,7 +24,7 @@ usuarios = ['Alice', 'Bob', 'Carlos']
 threads = []
 
 for usuario in usuarios:
-    t = threading.Thread(target=loja.comprar_item, args=(usuario,))
+    t = threading.Thread(target=loja.comprar_item, args=(usuario,))  
     threads.append(t)
     t.start()
 
